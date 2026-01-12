@@ -1,0 +1,11 @@
+# 浏览器扩展插件
+- Heimdallr 防蜜罐
+- FindSomething api接口发现
+- webRTC 防泄露
+- FeHelper 代码美化
+- ZeroOmegaProxy 代理切换
+- Wappalyzer 网页框架发现
+- charset 网页编码
+- X-Forwarded-For Header 请求头ip伪造
+- Shodan 信息收集
+- HackBar 请求工具
