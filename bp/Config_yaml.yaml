@@ -1,0 +1,161 @@
+Bypass_List: null
+Load_List:
+- {type: Unauthorized, loaded: true, re: nacos, method: GET, name: Nacos, id: 1, state: '200',
+  url: /nacos/index.html, info: Nacos Find!!!}
+- {type: Spring, loaded: true, re: springframework|spring.cloud.bootstrap.location|Spring
+    Actuator Env RCE, method: GET, name: Spring Env RCE, id: 2, state: '200', url: /env,
+  info: 'Actuator Env|RCE:spring.cloud.bootstrap.location|XStreamRCE:eureka.client.serviceUrl.defaultZone
+    Find!!!'}
+- {type: Spring, loaded: true, re: springframework|spring.cloud.bootstrap.location|Spring
+    Actuator Env RCE, method: GET, name: Spring Env RCE, id: 3, state: '200', url: /actuator/env,
+  info: 'Actuator Env|RCE:spring.cloud.bootstrap.location|XStreamRCE:eureka.client.serviceUrl.defaultZone
+    Find!!!'}
+- {method: GET, state: '200', name: Druid Monitor, url: /druid/index.html, id: 4,
+  info: Druid Monitor Find!!!, loaded: true, type: Unauthorized, re: druid}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: api-docs, id: 5, state: '200',
+  url: /v2/api-docs, info: api-docs Find!!!}
+- {type: ApiDoc, loaded: true, re: swagger, method: GET, name: Swagger-UI, id: 6,
+  state: '200', url: /swagger-ui.html, info: Swagger-UI Find!!!}
+- {type: Spring, loaded: true, re: springframework|reloadByURL|createJNDIRealm, method: GET,
+  name: Spring Jolokia|Rce, id: 7, state: '200', url: /jolokia/list, info: 'Spring
+    Jolokia|XXE/RCE:reloadByURL|RCE:createJNDIRealm Find!!!'}
+- {type: Spring, loaded: true, re: springframework|reloadByURL|createJNDIRealm, method: GET,
+  name: Spring Jolokia|Rce, id: 8, state: '200', url: /actuator/jolokia/list, info: 'Spring
+    Jolokia|XXE/RCE:reloadByURL|RCE:createJNDIRealm Find!!!'}
+- {type: ApiDoc, loaded: true, re: api, method: GET, name: Doc File, id: 9, state: '200',
+  url: /doc.html, info: Doc File Find!!!}
+- {type: Spring, loaded: true, re: swagger, method: GET, name: swagger.json, id: 10,
+  state: '200', url: /v1/swagger.json, info: swagger.json Find!!!}
+- {type: Spring, loaded: true, re: swagger, method: GET, name: swagger.json, id: 11,
+  state: '200', url: /v2/swagger.json, info: swagger.json Find!!!}
+- {type: Spring, loaded: true, re: swagger, method: GET, name: Swagger-resources,
+  id: 12, state: '200', url: /swagger-resources, info: swagger-resources Find!!!}
+- {loaded: false, re: ASP.NET|tempuri.org, method: GET, name: Soap, id: 13, state: '200',
+  type: ApiDoc, url: /services, info: Soap Find!!!}
+- {type: ApiDoc, loaded: true, re: Web API, method: GET, name: Web API Help, id: 14,
+  state: '200', url: /Help, info: Web API Help Find!!!}
+- {type: ApiDoc, loaded: true, re: Web API, method: GET, name: Web API Help, id: 15,
+  state: '200', url: /help, info: Web API Help Find!!!}
+- {method: POST, state: '401', name: Weblogic CVE-2019-2618, url: /bea_wls_deployment_internal/DeploymentService,
+  id: 16, info: Weblogic CVE-2019-2618 Find!!!, loaded: true, type: Weblogic, re: password}
+- {loaded: false, re: ds_store, method: GET, name: DS_Store, id: 19, state: '200',
+  type: Information leakage, url: /.DS_Store, info: .DS_Store Find!!!}
+- {loaded: false, re: README.md, method: GET, name: README.md, id: 20, state: '206',
+  type: Information leakage, url: /README.md, info: README.md Find!!!}
+- {loaded: false, re: crossdomain.xml, method: GET, name: crossdomain, id: 21, state: '200',
+  type: Information leakage, url: /crossdomain.xml, info: crossdomain.xml Find!!!}
+- {loaded: false, re: .idea, method: GET, name: .idea, id: 22, state: '200', type: Information
+    leakage, url: /.idea/modules.xml, info: .idea Find!!!}
+- {loaded: false, re: readme.txt, method: GET, name: readme, id: 23, state: '206',
+  type: Information leakage, url: /readme.txt, info: readme.txt Find!!!}
+- {type: ApiDoc, loaded: true, re: api-docs|openapi, method: GET, name: api-docs,
+  id: 24, state: '200', url: /v3/api-docs, info: api-docs Find !!!}
+- {loaded: false, re: User-agent, method: GET, name: robots, id: 25, state: '200',
+  type: Information leakage, url: /robots.txt, info: robots.txt Find !!!}
+- {type: Spring, loaded: true, re: actuator, method: GET, name: actuator, id: 26,
+  state: '200', url: /actuator/, info: actuator FInd !!!}
+- {re: dashboards, name: dashboards, id: '27', state: '200', url: /dashboards, info: grafana
+    AUth, type: default, loaded: true}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File1 403, id: 28,
+  state: '200', url: /..;/..;/..;/v2/api-docs, info: Api-doc1 403 Find}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File2 403, id: 29,
+  state: '200', url: /..;/v2/api-docs, info: Api-doc2 403 Find}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File3 403, id: 30,
+  state: '200', url: /..;/v3/api-docs, info: Api-doc3 403 Find}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File4 403, id: 31,
+  state: '200', url: /..;/..;/..;/v3/api-docs, info: Api-doc3 403 Find}
+- {type: ApiDoc, loaded: true, re: swagger, method: GET, name: swagger-ui1 403, id: 32,
+  state: '200', url: /..;/..;/..;/swagger-ui.html, info: swagger-ui1 403 Find}
+- {type: ApiDoc, loaded: true, re: swagger, method: GET, name: swagger-ui2 403, id: 33,
+  state: '200', url: /..;/swagger-ui.html, info: swagger-ui2 403 Find}
+- {type: ApiDoc, loaded: true, re: api, method: GET, name: Doc1 403 File, id: 34,
+  state: '200', url: /..;/doc.html, info: Doc File1 403 Find!!!}
+- {type: ApiDoc, loaded: true, re: api, method: GET, name: Doc1 403 File, id: 35,
+  state: '200', url: /..;/..;/..;/doc.html, info: Doc File2 403 Find!!!}
+- {type: Unauthorized, loaded: true, re: nacos1 403, method: GET, name: Nacos1 403,
+  id: 36, state: '200', url: /..;/nacos/index.html, info: Nacos1 403Find!!!}
+- {type: Unauthorized, loaded: true, re: nacos2 403, method: GET, name: Nacos1 403,
+  id: 37, state: '200', url: /..;/..;/..;/nacos/index.html, info: Nacos2 403 Find!!!}
+- {method: GET, state: '200', name: Druid Monitor1 403, url: /..;/druid/index.html,
+  id: 38, info: Druid Monitor1 403 Find!!!, loaded: true, type: Unauthorized, re: druid1
+    403}
+- {method: GET, state: '200', name: Druid Monitor2 403, url: /..;/..;/..;/druid/index.html,
+  id: 39, info: Druid Monitor2 403 Find!!!, loaded: true, type: Unauthorized, re: druid2
+    403}
+- {type: Spring, loaded: true, re: actuator, method: GET, name: actuator1 403, id: 40,
+  state: '200', url: /..;/actuator/, info: actuator2 403 FInd !!!}
+- {type: Spring, loaded: true, re: actuator, method: GET, name: actuator2 403, id: 41,
+  state: '200', url: /..;/..;/..;/actuator/, info: actuator1 403 FInd !!!}
+- {type: Spring, loaded: true, re: springframework|spring.cloud.bootstrap.location|Spring
+    Actuator Env RCE, method: GET, name: Spring Env RCE1 403, id: 42, state: '200',
+  url: /..;/env, info: 'Actuator Env|RCE:spring.cloud.bootstrap.location|XStreamRCE:eureka.client.serviceUrl.defaultZone
+    Find!!!'}
+- {type: Spring, loaded: true, re: springframework|spring.cloud.bootstrap.location|Spring
+    Actuator Env RCE, method: GET, name: Spring Env RCE2 403, id: 43, state: '200',
+  url: /..;/..;/..;/env, info: 'Actuator Env|RCE:spring.cloud.bootstrap.location|XStreamRCE:eureka.client.serviceUrl.defaultZone
+    Find!!!'}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: Ueditor, id: 44, state: '200',
+  url: /ueditor/ueditor.config.js, info: Ueditor Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: UE, id: 45, state: '200',
+  url: /UE/ueditor.config.js, info: UE Find}
+- {type: Editor, loaded: true, re: Ueditor-net, method: GET, name: ueditor-net, id: 46,
+  state: '200', url: /ueditor1_4_3-utf8-net/ueditor.config.js, info: ueditot-net Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: third-baidu, id: 47,
+  state: '200', url: /third-baidu/ueditor.config.js, info: third-baidu Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: ueditor1.4.3.3, id: 48,
+  state: '200', url: /ueditor1.4.3.3/ueditor.config.js, info: ueditor1.4.3.3 Find}
+- {loaded: false, re: Platform|Components, method: GET, name: Docker Unauthorized,
+  id: 49, state: '200', type: Unauthorized, url: /version, info: Docker Unauthorized
+    Find!!!}
+- {loaded: false, re: repositories, method: GET, name: Docker Registry, id: 50, state: '200',
+  type: Unauthorized, url: /v2/_catalog, info: Docker Registry Find!!!}
+- {loaded: false, re: kibana, method: GET, name: kibana CVE-2019-7609, id: 51, state: '200',
+  type: Unauthorized, url: /app/kibana#/, info: kibana CVE-2019-7609 Find!!!}
+- {loaded: false, re: httpd_design_handlers, method: GET, name: CouchDB, id: 52, state: '200',
+  type: Unauthorized, url: /_config, info: CouchDB Find!!!}
+- {loaded: true, re: weblogic server, method: GET, name: Weblogic CVE-2020-14882,
+  id: 53, state: '200', type: Weblogic, url: /console/css/%252e%252e%252fconsole.portal,
+  info: Weblogic CVE-2020-14883 Find!!!}
+- {loaded: true, re: Applications, method: GET, name: HadoopYARN, id: 54, state: '200',
+  type: Unauthorized, url: /cluster, info: HadoopYARN Find!!!}
+- {loaded: true, re: jboss, method: GET, name: Jboss Unauthorized, id: 55, state: '200',
+  type: Unauthorized, url: /jmx-console/, info: Jboss Unauthorized Find!!!}
+- {loaded: true, re: jboss, method: GET, name: Jboss Unauthorized, id: 56, state: '200',
+  type: Unauthorized, url: /jbossws/, info: Jboss Unauthorized Find!!!}
+- {loaded: true, re: Jenkins, method: GET, name: Jenkins, id: 57, state: '200', type: Unauthorized,
+  url: /manage, info: Jenkins Find!!!}
+- {loaded: true, re: ActiveMQ, method: GET, name: ActiveMQ, id: 58, state: '200',
+  type: Unauthorized, url: /admin/, info: ActiveMQ Find!!!}
+- {loaded: true, re: /_cat/, method: GET, name: Elasticsearch, id: 59, state: '200',
+  type: Unauthorized, url: /_cat, info: Elasticsearch Find!!!}
+- {loaded: true, re: Zabbix, method: GET, name: Zabbix, id: 60, state: '200', type: Unauthorized,
+  url: '/zabbix.php?action=problem.view&ddreset=1', info: Zabbix Find!!!}
+- {loaded: true, re: Dashboard|solr|Request-Handler, method: GET, name: Solr, id: 61,
+  state: '200', type: Unauthorized, url: /solr/admin, info: Solr Find!!!}
+- {loaded: true, re: Weblogic, method: GET, name: Weblogic Console, id: 62, state: '200',
+  type: Weblogic, url: /console, info: Weblogic Console Find!!!}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File2 403, id: 63,
+  state: '200', url: /;/v2/api-docs, info: Api-doc2 403 Find}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File3 403, id: 64,
+  state: '200', url: /;/v3/api-docs, info: Api-doc3 403 Find}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File2 403, id: 65,
+  state: '200', url: /v2/;/api-docs, info: Api-doc2 403 Find}
+- {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: Doc File3 403, id: 66,
+  state: '200', url: /v3/;/api-docs, info: Api-doc3 403 Find}
+- {type: Editor, loaded: true, re: Fckeditor, method: GET, name: Fckeditor, id: 67,
+  state: '200', url: /fckeditor/editor/dialog/common/fck_dialog_common.js, info: Fckeditor
+    Find}
+- {type: Editor, loaded: true, re: kindeditor, method: GET, name: kindeditor, id: 68,
+  state: '200', url: /kindeditor/kindeditor.js, info: kindeditor Find}
+- {type: Editor, loaded: true, re: kindeditor, method: GET, name: kindeditor, id: 69,
+  state: '200', url: /editor/kindeditor.js, info: kindeditor Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: ueditor, id: 70, state: '200',
+  url: /editor/ueditor.config.js, info: ueditor Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: ueditor, id: 71, state: '200',
+  url: /editor/ueditor.all.min.js, info: ueditor Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: ueditor, id: 72, state: '200',
+  url: /UEditor/ueditor.config.js, info: ueditor Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: ueditor, id: 73, state: '200',
+  url: /UEditor/ueditor.all.min.js, info: ueditor Find}
+- {type: Editor, loaded: true, re: ueditor, method: GET, name: ueditor, id: 74, state: '200',
+  url: /ueditor/ueditor.all.min.js, info: ueditor Find}
