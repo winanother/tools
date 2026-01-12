@@ -12,6 +12,7 @@
 - 漏洞扫描[**springScan.jar**](https://github.com/metaStor/SpringScan)  
 - 图像识别插件[**captcha-killer-modified.jar**](https://github.com/f0ng/captcha-killer-modified/releases)
 - 短信轰炸插件[**SMS_Bomb_Fuzzer.jar**](https://github.com/yuziiiiiiiiii/SMS_Bomb_Fuzzer/releases)
+- 预装py环境[**jython-standalone-2.7.4**](https://central.sonatype.com/artifact/org.python/jython-installer/versions)
 
 ---
 
