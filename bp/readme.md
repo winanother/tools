@@ -16,12 +16,12 @@
 ---
 
 # 需要注意的地方
-## RouteVulScan.jar
+## 1. RouteVulScan.jar
 路由扫描，发现接口文档等
 ### Config_yaml.yaml
 RouteVulScan 配置文件，替换路径显示的 yaml 文件  
 <img width="1409" height="908" alt="image" src="https://github.com/user-attachments/assets/9a74be54-cd0f-459c-a95b-2b11e39536a2" />
-## HaE-2.4.2-J8.jar
+## 2. HaE-2.4.2-J8.jar
 会话着色 （新版在扩展商店里下载，旧版百度找对应版本的hae）  
 <img width="880" height="185" alt="image" src="https://github.com/user-attachments/assets/390a611b-d284-4f3b-8981-5c04694d10ca" />
 <https://github.com/gh0stkey/HaE/releases/tag/2.6.1>
