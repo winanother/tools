@@ -1,4 +1,4 @@
 - [API-Explorer](https://github.com/mrknow001/API-Explorer)
 - [oss-browser](https://github.com/aliyun/oss-browser)
-- [TscanPlus](
-- [Fine](
+- [TscanPlus](https://github.com/TideSec/TscanPlus)
+- [Fine](https://github.com/fasnow/fine)
