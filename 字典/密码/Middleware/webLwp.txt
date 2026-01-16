@@ -1,0 +1,14 @@
+password
+weblogic
+weblogic123
+weblogic2
+security
+password
+password
+security
+wlcsystem
+wlpisystem
+guest
+portaladmin
+system
+WebLogic
