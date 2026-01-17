@@ -18,7 +18,7 @@
 - 终端工具（其他功能没用过）  
   [Linux 远程连接工具](https://github.com/winanother/tools/tree/main/终端工具)
 
-有什么问题可以提 **issues** 
+有什么问题 or 意见可以提  **issues**  欢迎来提👋👋
 
 🎉🎉🎉🎉👋  如果觉得有帮助的话，请点个⭐⭐叭👋  🎉🎉🎉🎉
 ---
