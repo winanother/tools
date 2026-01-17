@@ -1,3 +1,0 @@
-/phpinfo.gif
-/x.gif
-/r.gif

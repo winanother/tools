@@ -1,5 +1,0 @@
-/login.jhtml
-/user_profile.jhtml
-/logout.jhtml
-/user_profile.jhtml
-/buy_now.jhtml

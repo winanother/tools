@@ -1,5 +1,0 @@
-/lsa.swf
-/uploader.swf
-/JSocket.swf
-/column.swf
-/loader.swf

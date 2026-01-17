@@ -1,3 +1,0 @@
-/forgetPwd.shtml
-/404.shtml
-/mutually_help_null.shtml

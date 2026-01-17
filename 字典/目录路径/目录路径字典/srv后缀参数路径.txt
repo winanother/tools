@@ -1,3 +1,0 @@
-/item.srv
-/my/channel/item.srv
-/itemView.srv
