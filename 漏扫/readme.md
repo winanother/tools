@@ -1,0 +1,3 @@
+- [goby](https://gobysec.net/) 免费版做服务发现还可以（扫端口什么的）
+- [nuclei](https://github.com/projectdiscovery/nuclei) 🎉**世界上最好的免费漏扫**🎉
+- [xray](https://github.com/chaitin/xray) 长亭出品，必属精品
