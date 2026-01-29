@@ -1,4 +1,4 @@
-# 索引
+# 目录索引
 - 浏览器扩展  
   [Browser EX](https://github.com/winanother/tools/tree/main/Browser%20EX)
 - bp 武装插件  
